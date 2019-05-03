@@ -53,8 +53,9 @@ are essentially slowly "eating" rails as ruby
 
 We can write an app in Ruby JS and I recommend you this setup:
 
-Gemfile.lock
-```
+> Gemfile.lock
+
+```ruby
 
 gem "roda"
 
@@ -75,5 +76,32 @@ gem "ethereum"
 
 ```
 
+
+In ruby you can write ES Modules by using this synax
+
+```ruby
+module Pi
+  def self.area(radius)
+    Math::PI*radius*radius
+  end
+end
+
+EXPORTS = Pi
+
+```
+
+or this one
+
+
+```ruby
+module Foo
+  def self.bar
+    ">"
+  end
+end
+
+
+EXPORTS.defaults = Foo
+```
 
 
