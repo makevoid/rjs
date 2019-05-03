@@ -33,3 +33,12 @@ Rspec.describe("app") {
 ### 
 ```
 
+### Purpose
+
+The perception of Ruby is at one of the highest lows because of things like 
+
+Roda
+
+dry-*everything
+
+are essentially slowly "eating" rails as ruby
