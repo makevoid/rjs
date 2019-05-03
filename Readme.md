@@ -1,5 +1,6 @@
 I start writing ruby in this style for quite some time and I having enjoying quite a bit
 
+```ruby
 ### Functions
 
 def foo
@@ -30,5 +31,5 @@ Rspec.describe("app") {
 
 
 ### 
-
+```
 
