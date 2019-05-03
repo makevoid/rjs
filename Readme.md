@@ -101,7 +101,29 @@ module Foo
 end
 
 
-EXPORTS.defaults = Foo
+Exports.defaults = Foo
 ```
 
 
+the implementation of `EXPORTS.defaults = Foo`  could be something like
+
+```ruby
+module Exports
+  def defaults=(module)
+    module
+    EXPORTS[File.basename(__FILE__)] = module
+  end
+
+  module_method(:defaults)
+end
+```
+
+or 
+
+```ruby
+class Exports
+  def self.defaults=(module)
+    EXPORTS[module
+  end
+end
+```
