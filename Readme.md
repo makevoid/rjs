@@ -37,8 +37,10 @@ Rspec.describe("app") {
 
 The perception of Ruby is at one of the highest lows because of things like 
 
-Roda
+- Roda
 
-dry-*everything
+- dry-*everything
+
+- OJ
 
 are essentially slowly "eating" rails as ruby
