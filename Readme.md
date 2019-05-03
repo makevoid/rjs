@@ -41,6 +41,39 @@ The perception of Ruby is at one of the highest lows because of things like
 
 - dry-*everything
 
-- OJ
+- GRPC
+
+- varoius ways of writing DSLs, which ruby is best at
+- API development is super fluid with Roda and RSpec
+
+
 
 are essentially slowly "eating" rails as ruby
+
+
+We can write an app in Ruby JS and I recommend you this setup:
+
+Gemfile.lock
+```
+
+gem "roda"
+
+gem "rspec"
+
+gem "haml" # you can also use erb but only compiled
+
+gem "inflecto"
+
+gem "dry-something" # optional
+
+gem "virtus" (models)
+
+gem "redis"
+# gem "hiredis" # C client
+
+gem "ethereum"
+
+```
+
+
+
