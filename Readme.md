@@ -39,7 +39,7 @@ Here I'm using ruby blocks. Which give us this syntax `function = -> {}`, this i
 Then let's see some "extras"
 
 
-
+```
 # 
 
 # TODO: add the others
@@ -47,7 +47,7 @@ Then let's see some "extras"
 # This is good but I haven't tried it:
 
 https://medium.com/@teabass/emulating-the-node-js-module-system-in-ruby-d84a5289d30e
-
+```
 
 ```ruby
 # Testing library: RSpec 
