@@ -29,6 +29,75 @@ Rspec.describe("app") {
   }
 }
 
+---
+
+
+```ruby
+module Exports
+  def defaults=(module)
+    module
+    EXPORTS[File.basename(__FILE__)] = module
+  end
+
+  module_method(:defaults)
+end
+```
+
+
+In ruby you can write ES Modules by using this synax
+
+```ruby
+module Pi
+  def self.area(radius)
+    Math::PI*radius*radius
+  end
+end
+
+EXPORTS = Pi
+
+```
+
+or this one
+
+
+```ruby
+module Foo
+  def self.bar
+    ">"
+  end
+end
+
+
+Exports.defaults = Foo
+```
+
+
+the implementation of `EXPORTS.defaults = Foo`  could be something like
+
+```ruby
+module Exports
+  def defaults=(module)
+    module
+    EXPORTS[File.basename(__FILE__)] = module
+  end
+
+  module_method(:defaults)
+end
+```
+
+or 
+
+```ruby
+class Exports
+  def self.defaults=(module)
+    EXPORTS[module
+  end
+end
+```
+
+
+---
+
 
 ### 
 ```
