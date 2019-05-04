@@ -21,6 +21,7 @@ Exports.defaults = App
 # server.rb
 require_relative 'app'
 run JS.new(App)
+# or "new App if you don't like JS.new(), which will be the explicit version"
 
 # config.ru
 require_relative 'server'
@@ -30,9 +31,7 @@ require_relative 'server'
 
 # lib/js_new.js
 
-
-# JS.new
-
+# JS.new( Klass ) # ruby implementation of the `new Klass() DSL
 class JS
   def initialize(klass)
     klass.public_send(:new)
@@ -40,13 +39,12 @@ class JS
 end
 
 
-
-
-
 # Rakefile
 
 task :run do 
-  sh ""
+  sh "ABCDE"
 end
 
-task default: run
+task default: :run
+
+# this is too funny (https://www.youtube.com/watch?v=datDkio1AXM) but I'm serious, ruby is a better JS
