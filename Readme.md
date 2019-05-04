@@ -49,6 +49,7 @@ Then let's see some "extras"
 https://medium.com/@teabass/emulating-the-node-js-module-system-in-ruby-d84a5289d30e
 
 
+```ruby
 # Testing library: RSpec 
 
 Rspec.describe("app") {
@@ -57,8 +58,9 @@ Rspec.describe("app") {
     test.should === true
   }
 }
+```
 
----
+This is really peculiar to ruby, to have such a good testing library like Rspec
 
 
 ```ruby
@@ -124,14 +126,22 @@ class Exports
 end
 ```
 
+# TODO: put at the beginning of the readme only default answers, make an env/rubyjs-config file so that you can pick the DSL you want for importing (until the winner implementation wins, rubocop rule) # note: rubocop is like eslint
+
 
 ---
 
 
-### 
+### Purpose
+
+A bit of context...
+
+Why the !#@** I'm doing this?
+
 ```
 
 ### Purpose
+#    let's give it a bit of purpose:
 
 The perception of Ruby is at one of the highest lows because of things like 
 
@@ -148,28 +158,5 @@ The perception of Ruby is at one of the highest lows because of things like
 
 are essentially slowly "eating" rails as ruby
 
+---
 
-We can write an app in Ruby JS and I recommend you this setup:
-
-> Gemfile.lock
-
-```ruby
-
-gem "roda"
-
-gem "rspec"
-
-gem "haml" # you can also use erb but only compiled
-
-gem "inflecto"
-
-gem "dry-something" # optional
-
-gem "virtus" (models)
-
-gem "redis"
-# gem "hiredis" # C client
-
-gem "ethereum"
-
-```
