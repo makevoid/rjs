@@ -126,7 +126,6 @@ class Exports
 end
 ```
 
-# TODO: put at the beginning of the readme only default answers, make an env/rubyjs-config file so that you can pick the DSL you want for importing (until the winner implementation wins, rubocop rule) # note: rubocop is like eslint
 
 
 ---
