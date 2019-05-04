@@ -40,15 +40,6 @@ Then let's see some "extras"
 
 
 
-```
-# hi I'm alex and I live in the comments
-
-
-```
-
-hi I'm an elf and I write documentation (_why style)
-
-```
 # 
 
 # TODO: add the others
