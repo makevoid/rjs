@@ -40,18 +40,38 @@ Here I'm using ruby blocks. Which give us this syntax `function = -> {}`, this i
 
 ### JS style modules implemented in ruby
 
-```ruby
-module Exports
-  def self.defaults=(mod)
-    require __FILE__
-    public_send :include, mod
-  end
 
-  module_method(:defaults)
+```ruby
+module Foo
+  def self.bar
+    "hello foobar!"
+  end
 end
+
+Modules.exports = Foo
 ```
 
-### Modules Usage
+
+the implementation of `Modules.exports = Foo`  could be something like:
+
+
+```ruby
+module Modules
+  def exports=(mod)
+    EXPORTS[mod.name] = mod
+  end
+  module_function(:exports=)
+end
+
+def Require(modulePath)
+  moduleName = File.basename modulePath
+  moduleName = moduleName.capitalize
+  require modulePath
+  Object.send :remove_const, moduleName
+  EXPORTS.fetch moduleName
+end
+module_function(:Require)
+```
 
 
 ---
@@ -97,3 +117,12 @@ The perception of Ruby is at one of the highest lows because of things like
 
 
 are essentially slowly "eating" rails as ruby
+```
+
+
+Bend Ruby a bit so that JS people can be more at ease with it!
+
+
+my 2 cents
+
+@makevoid
