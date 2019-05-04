@@ -1,17 +1,55 @@
 I start writing ruby in this style for quite some time and I having enjoying quite a bit
 
+This is the default ruby-style functions: 
+
 ```ruby
 ### Functions
 
 def foo
   "bar"
 end
+```
+
+JS Style:
+
+```
+# looks like JS to me:
+ 
+foo = -> { return "bar" }
+```
+
+
+and here's the RubyJS (ruby) one:
+
+```ruby
+# here you go!
 
 foo = -> { "bar" }
+```
 
-# or if you want to resemble JS:
+implicit return!1!1!!
 
-foo = -> { return "bar" }
+---
+
+Here I'm using ruby blocks. Which give us this syntax `function = -> {}`, this is very JS.
+
+
+
+
+Then let's see some "extras"
+
+
+
+```
+# hi I'm alex and I live in the comments
+
+
+```
+
+hi I'm an elf and I write documentation
+
+```
+# 
 
 # TODO: add the others
 
