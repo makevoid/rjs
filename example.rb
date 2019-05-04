@@ -47,4 +47,4 @@ end
 
 task default: :run
 
-# this is too funny (https://www.youtube.com/watch?v=datDkio1AXM) but I'm serious, ruby is a better JS
+# this is too funny (https://www.youtube.com/watch?v=datDkio1AXM) but I'm serious, ruby can be a better JS
