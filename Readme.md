@@ -99,7 +99,7 @@ Why the !#@** I'm doing this?
 
 ### Purpose
 
-#let's give it a bit of purpose:
+Let's give it a bit of context:
 
 The perception of Ruby is at one of the highest lows because of things like
 
