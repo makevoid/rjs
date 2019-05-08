@@ -97,7 +97,6 @@ A bit of context...
 
 Why the !#@** I'm doing this?
 
-```
 ### Purpose
 
 #let's give it a bit of purpose:
@@ -117,7 +116,7 @@ The perception of Ruby is at one of the highest lows because of things like
 
 
 are essentially slowly "eating" rails as ruby
-```
+
 
 
 Bend Ruby a bit so that JS people can be more at ease with it!
