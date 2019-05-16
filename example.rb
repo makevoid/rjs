@@ -40,9 +40,13 @@ Foo.bar
 puts "returns:"
 puts Foo.bar
 
-puts "Triple equal:"
-def ===(foo); self == foo; end
-puts "def ===(foo); self == foo; end"
+# puts "---\n\n"
+
+#puts "Evil ones\n"
+
+#puts "Triple equal:"
+# def ===(foo); self == foo; end
+#puts "def ===(foo); self == foo; end"
 
 # 1 === 1 # => true
 # 1 === 2 # => false
