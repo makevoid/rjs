@@ -97,11 +97,10 @@ A bit of context...
 
 Why the !#@** I'm doing this?
 
-### Purpose
+The perception of Ruby is at one of the highest lows because of things like are essentially slowly "eating" rails as ruby, we will come out of a Ruby-Rails (- ActiveSupport, ActiveRecord & friends) - Rails vs Merb merge was a bit of a failure, we lost a lot of merb cool things - Merb and DataMapper were much better than rails but no one noticed because of omakase
 
-Let's give it a bit of context:
 
-The perception of Ruby is at one of the highest lows because of things like
+My preferred stack:
 
 - Roda
 
@@ -114,8 +113,6 @@ The perception of Ruby is at one of the highest lows because of things like
 
 - we have a lot of good libraries for networking, dom parsing, scraping, async/actors
 
-
-are essentially slowly "eating" rails as ruby
 
 
 
