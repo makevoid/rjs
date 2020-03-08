@@ -1,19 +1,33 @@
+Debug1 = -> {
+  puts "returns:"
+  puts fn.().inspect
+  puts "\n"
+}
+
+
+
 # run this file via `ruby example.rb`
 
-puts "Functions:"
+puts "--- Functions: ---"
+
+# Example - Functions - basic function definition:
+
 puts "foo = -> { return \"bar\" }"
 foo = -> { return "bar" }
 
+# Example - Functions - basic function call:
+
 puts "foo.()\n"
 foo.()
-puts "returns:"
-puts foo.().inspect
-puts "\n"
+
+Debug1.(foo)
+
 
 puts "simplified:"
 foo = -> { "bar" }
 puts "foo = -> { \"bar\" }"
 foo.()
+
 puts "returns:"
 puts foo.().inspect
 puts "\n"
@@ -39,14 +53,3 @@ Foo = Require('./lib/foo')
 Foo.bar
 puts "returns:"
 puts Foo.bar
-
-# puts "---\n\n"
-
-#puts "Evil ones\n"
-
-#puts "Triple equal:"
-# def ===(foo); self == foo; end
-#puts "def ===(foo); self == foo; end"
-
-# 1 === 1 # => true
-# 1 === 2 # => false

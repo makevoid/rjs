@@ -1,10 +1,9 @@
 # This is an example of RubyJS
 
-
 # this is an option, to use classes with a lot of instance methods (in ruby usually this is the default option)
 #
 # class App
-#   def foo() 
+#   def foo()
 #   end
 # end
 #
@@ -16,7 +15,7 @@ require_relative 'env'
 module App
 end
 
-Exports.defaults = App 
+Exports.defaults = App
 
 # server.rb
 require_relative 'app'
@@ -41,7 +40,7 @@ end
 
 # Rakefile
 
-task :run do 
+task :run do
   sh "ABCDE"
 end
 
@@ -49,7 +48,7 @@ task default: :run
 
 
 
-# 
+#
 
 ### Functions
 
@@ -67,10 +66,10 @@ foo = -> { return "bar" }
 
 # This is good but I haven't tried it:
 
-https://medium.com/@teabass/emulating-the-node-js-module-system-in-ruby-d84a5289d30e
+# https://medium.com/@teabass/emulating-the-node-js-module-system-in-ruby-d84a5289d30e
 
 
-# Testing library: RSpec 
+# Testing library: RSpec
 
 Rspec.describe("app") {
   specify("this is a test") {

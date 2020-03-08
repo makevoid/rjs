@@ -1,21 +1,30 @@
-notes for @makevoid:
-
-
-
 ##### this is too funny (https://www.youtube.com/watch?v=datDkio1AXM LOL!) but I'm serious, ruby can be a better JS
 
 
----
+<!--
 
-Notes to myself:
+--- TODO ---
 
-It would be nice to resemble _why's style doing some cartoon foxes replacement
+# not needed really, but if you feel like it you can enable this:
 
-```
-# hi I'm The Ruby Guy and I live in the comments of the wizard
-```
+# puts "Triple equal:"
+# def ===(foo); self == foo; end
+#puts "def ===(foo); self == foo; end"
 
-```
-hi I'm the JS Guy and I write JS and documentation, I think that JS can be like Ruby too! But especially that you can write JS in Ruby 
-```
- 
+-->
+
+<!-- moar notes  -->
+
+<!--
+### Testing example with Rspec
+
+```ruby
+# Testing library: RSpec
+
+Rspec.describe("app") {
+  specify("this is a test") {
+    test = Test.().foo()
+    test.should === true
+  }
+}
+``` -->

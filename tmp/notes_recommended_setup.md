@@ -18,9 +18,7 @@ gem "haml" # you can also use erb but only compiled
 
 gem "inflecto"
 
-gem "dry-something" # optional
-
-gem "virtus" (models)
+gem "virtus" (models) # or the newer:  dry-types, dry-struct and dry-schema
 
 gem "redis"
 # gem "hiredis" # C client
