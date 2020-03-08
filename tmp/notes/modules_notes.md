@@ -1,5 +1,3 @@
-
-
 In ruby you can write ES Modules by using this synax
 
 ```ruby

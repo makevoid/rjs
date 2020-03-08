@@ -4,8 +4,6 @@ Debug1 = -> {
   puts "\n"
 }
 
-
-
 # run this file via `ruby example.rb`
 
 puts "--- Functions: ---"
